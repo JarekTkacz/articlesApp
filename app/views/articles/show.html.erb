@@ -1,0 +1,17 @@
+<div class="main">
+  
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @article %>
+
+    <div class="link">
+    <%= link_to "Edit this article", edit_article_path(@article) %> 
+    </div>
+    <div class="link">
+    <%= link_to "Back to articles", articles_path %>
+    </div>
+    <div class="link">
+    <%= button_to "Delete article", @article, method: :delete %>
+    </div>
+  
+</div>
